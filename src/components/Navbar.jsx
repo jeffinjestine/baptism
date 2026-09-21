@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Volume2, VolumeX, Menu, X, Sparkles } from 'lucide-react';
 
-export default function Navbar({ isPlayingMusic, toggleMusic, onReplayEnvelope }) {
+export default function Navbar({ isPlayingMusic, toggleMusic }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -65,7 +65,7 @@ export default function Navbar({ isPlayingMusic, toggleMusic, onReplayEnvelope }
           ))}
         </nav>
 
-        {/* Right Actions: Music Toggle & Envelope Replay */}
+        {/* Right Actions: Music Toggle & Mobile Menu */}
         <div className="flex items-center gap-3">
           
           {/* Audio Player Button */}
@@ -91,16 +91,6 @@ export default function Navbar({ isPlayingMusic, toggleMusic, onReplayEnvelope }
                 <span className="hidden sm:inline text-[11px] text-grayText">Muted</span>
               </>
             )}
-          </button>
-
-          {/* Replay Envelope animation button */}
-          <button
-            onClick={onReplayEnvelope}
-            title="Replay Envelope Unsealing"
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 hover:border-gold/40 text-grayText hover:text-gold text-xs transition-all"
-          >
-            <Sparkles className="w-3.5 h-3.5" />
-            <span className="text-[11px]">Envelope</span>
           </button>
 
           {/* Mobile Menu Button */}
@@ -130,17 +120,14 @@ export default function Navbar({ isPlayingMusic, toggleMusic, onReplayEnvelope }
             ))}
           </div>
 
-          <div className="pt-4 border-t border-white/10 flex justify-center gap-4">
-            <button
-              onClick={() => {
-                onReplayEnvelope();
-                setMobileMenuOpen(false);
-              }}
-              className="px-4 py-2 rounded-full gold-button-outline text-xs flex items-center gap-2"
+          <div className="pt-4 border-t border-white/10 flex justify-center">
+            <a
+              href="#rsvp"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-6 py-2.5 rounded-full gold-button text-xs font-cinzel tracking-wider uppercase flex items-center gap-2 text-black"
             >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>View Envelope</span>
-            </button>
+              <span>RSVP Attendance</span>
+            </a>
           </div>
         </div>
       )}

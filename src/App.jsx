@@ -57,10 +57,6 @@ export default function App() {
     }
   };
 
-  const handleReplayEnvelope = () => {
-    setEnvelopeOpen(true);
-  };
-
   return (
     <div className="min-h-screen bg-[#0B0B0B] text-white font-poppins relative selection:bg-gold selection:text-black overflow-x-hidden">
       
@@ -80,14 +76,11 @@ export default function App() {
         <Navbar
           isPlayingMusic={isPlayingMusic}
           toggleMusic={toggleMusic}
-          onReplayEnvelope={handleReplayEnvelope}
         />
 
         {/* Sections */}
         <main>
-          <Hero
-            onReplayEnvelope={handleReplayEnvelope}
-          />
+          <Hero />
           <BibleVerse />
           <Parents />
           <Countdown />

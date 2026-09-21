@@ -11,6 +11,10 @@ export default function BibleVerse() {
       reference: "Mark 10:14"
     },
     {
+      quote: "Thanks be to God for His inexpressible gift!",
+      reference: "2 Corinthians 9:15"
+    },
+    {
       quote: "For all of you who were baptized into Christ have clothed yourselves with Christ.",
       reference: "Galatians 3:27"
     },

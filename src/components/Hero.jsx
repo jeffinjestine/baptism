@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, Sparkles, ChevronDown } from 'lucide-react';
 
-export default function Hero({ onOpenRSVP, onReplayEnvelope }) {
+export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 px-4 overflow-hidden">
       
@@ -140,13 +140,6 @@ export default function Hero({ onOpenRSVP, onReplayEnvelope }) {
             <span>RSVP Attendance</span>
             <Sparkles className="w-4 h-4 text-black" />
           </a>
-
-          <button
-            onClick={onReplayEnvelope}
-            className="px-6 py-3.5 rounded-full gold-button-outline font-cinzel text-xs sm:text-sm tracking-wider uppercase"
-          >
-            View Digital Envelope
-          </button>
         </motion.div>
 
       </div>
