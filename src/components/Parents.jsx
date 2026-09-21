@@ -17,8 +17,8 @@ export default function Parents() {
       title: "Blessed Godparents",
       icon: ShieldCheck,
       members: [
-        { role: "Godfather", name: "Shaji George" },
-        { role: "Godmother", name: "Simi Shaji" },
+        { role: "Godfather", name: "T K Joy" },
+        { role: "Godmother", name: "Lisamma Joy" },
       ],
       description: "Promising to mentor, spiritual lead, and walk alongside Jeffin on his journey."
     },
