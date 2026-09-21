@@ -8,8 +8,8 @@ export default function Parents() {
       title: "Loving Parents",
       icon: Heart,
       members: [
-        { role: "Father", name: "Jestine Joy" },
-        { role: "Mother", name: "Silpa Jestine" },
+        { role: "Father", name: "Jestine J Thannickal" },
+        { role: "Mother", name: "Silpa Shaji" },
       ],
       description: "Blessed with the gift of parenthood and guiding Jeffin in faith & love."
     },
