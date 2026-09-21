@@ -5,13 +5,13 @@ import { Calendar, Clock, MapPin, Sparkles, ChevronDown } from 'lucide-react';
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 px-4 overflow-hidden">
-      
+
       {/* Background Soft Gold Radial Aura */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-[#D4AF37]/15 via-transparent to-transparent rounded-full blur-[140px] pointer-events-none" />
 
       {/* Main Container */}
       <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
-        
+
         {/* Top Sacred Cross Badge */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -85,7 +85,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-garamond italic text-grayText text-lg md:text-xl my-4"
         >
-          Beloved son of <span className="text-white font-normal">Jestine Joy</span> & <span className="text-white font-normal">Silpa Jestine</span>
+          Beloved son of <span className="text-white font-normal">Jestine J Thannickal</span> & <span className="text-white font-normal">Silpa Shaji</span>
         </motion.p>
 
         {/* Quick Date, Time, Location Cards */}
